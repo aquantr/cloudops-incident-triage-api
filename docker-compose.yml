@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: cloudops-incident-postgres
+    environment:
+      POSTGRES_DB: cloudops_incidents
+      POSTGRES_USER: cloudops
+      POSTGRES_PASSWORD: cloudops
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: cloudops-incident-triage-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cloudops_incidents
+    username: cloudops
+    password: cloudops
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
