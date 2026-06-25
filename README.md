@@ -220,7 +220,6 @@ Example validation error:
 These are intentionally not part of the first MVP:
 
 * Add Testcontainers integration tests
-* Add GitHub Actions CI
 * Add OpenAPI/Swagger documentation
 * Add filtering by status, severity, and affected service
 * Add pagination
