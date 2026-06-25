@@ -21,4 +21,6 @@ jobs:
           java-version: '21'
 
       - name: Build with Maven
-        run: ./mvnw clean test
+        run: |
+          chmod +x ./mvnw
+          ./mvnw clean test
